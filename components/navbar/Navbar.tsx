@@ -48,7 +48,7 @@ export default function Navbar() {
 					}
 				</div>
 				<div className="hidden lg:flex lg:flex-1 lg:justify-end">
-					<a href="" className="text-sm font-semibold leading-6 text-gray-900">
+					<a href="" className="rounded-lg px-3 py-3 bg-orange-500 text-sm font-semibold leading-6 text-white">
 						Sign up
 					</a>
 				</div>
@@ -79,7 +79,7 @@ export default function Navbar() {
 								}
 							</div>
 							<div className="py-6">
-								<a href="*" className="-mx-3 block rounded-lg px-3 py-2 5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Sign Up</a>
+								<a href="*" className="-mx-3 block  bg-orange-500 rounded-lg px-3 py-2 5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Sign Up</a>
 							</div>
 						</div>
 

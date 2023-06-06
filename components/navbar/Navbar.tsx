@@ -48,8 +48,8 @@ export default function Navbar() {
 					}
 				</div>
 				<div className="hidden lg:flex lg:flex-1 lg:justify-end">
-					<a href="" className="rounded-lg px-3 py-3 bg-orange-500 text-sm font-semibold leading-6 text-white">
-						Sign up
+					<a href="/login" className="rounded-lg px-3 py-3 bg-orange-500 text-sm font-semibold leading-6 text-white">
+						Sign In
 					</a>
 				</div>
 			</nav>

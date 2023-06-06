@@ -19,3 +19,10 @@
 body {
   color: rgb(var(--foreground-rgb));
 }
+
+.login-left{
+  background: url('../public/couch2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}

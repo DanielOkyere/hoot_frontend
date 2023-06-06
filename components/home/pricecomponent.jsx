@@ -121,8 +121,8 @@ export default function Pricecomponent() {
                                     <div className="flex items-center p-8  uppercase">
                                         <button
                                             className="mt-3 text-lg font-semibold 
-	bg-black w-full text-white rounded-lg 
-	px-6 py-3 block shadow-xl hover:bg-gray-700"
+	bg-white w-full text-grey-800 rounded-lg 
+	px-6 py-3 block shadow-xl hover:bg-gray-700 hover:text-white"
                                         >
                                             Select
                                         </button>
@@ -223,8 +223,8 @@ export default function Pricecomponent() {
                                 <div className=" flex items-center p-8  uppercase">
                                     <button
                                         className="mt-3 text-lg font-semibold 
-	bg-black w-full text-white rounded-lg 
-	px-6 py-3 block shadow-xl hover:bg-gray-700"
+	bg-white w-full text-gray-800 rounded-lg 
+	px-6 py-3 block shadow-xl hover:bg-gray-700 hover:text-white"
                                     >
                                         Select
                                     </button>
@@ -338,8 +338,8 @@ export default function Pricecomponent() {
                                     <div className=" flex items-center p-8  uppercase">
                                         <button
                                             className="mt-3 text-lg font-semibold 
-	bg-black w-full text-white rounded-lg 
-	px-6 py-3 block shadow-xl hover:bg-gray-700"
+	bg-white w-full text-gray-800 rounded-lg 
+	px-6 py-3 block shadow-xl hover:bg-gray-700 hover:text-white"
                                         >
                                             Select
                                         </button>

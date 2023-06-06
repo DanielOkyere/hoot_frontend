@@ -35,12 +35,12 @@ export default function FooterComponent() {
     return (
         <footer class="bg-white">
             <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
-                <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
+                <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer" >
                    
                 {
                     footerlist.map((item)=>
-                    <div class="px-5 py-2">
-                    <a key={item.name} href={item.url} class="text-base text-gray-500 hover:text-orange-500">
+                    <div class="px-5 py-2" key={item.name}>
+                    <a  href={item.url} class="text-base text-gray-500 hover:text-orange-500">
                         {item.desc}
                     </a>
                 </div>)

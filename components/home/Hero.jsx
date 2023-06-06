@@ -1,12 +1,12 @@
 import Image from 'next/image'
-import heroImage from '../../public/hero.png'
+import heroImage from '../../public/hero_crop.png'
 export default function Hero() {
     return (
             <div className="relative isolate px-6 pt-1 lg:px-8  bg-white">
-                <div className="mx-auto max-w-screen-lg lg:py-32 xs:py-40 md:py-40 text-left flex sm:flex-row flex-col gap-8">
+                <div className="mx-auto max-w-screen-lg lg:py-32 xs:py-40 md:py-40 text-left flex md:flex-row flex-col gap-8 items-center">
                     <div className="flex flex-row gap-4 ">
-                        <div className='mx-auto  xs:w-.5'>
-                            <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                        <div className='mx-auto  xs:w-.5 max-w-md'>
+                            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-3xl">
                                 The Best Security Provider In the Country
                             </h1>
                             <p className="mt-6 text-lg leading-8 text-gray-600 text-justify ">
@@ -18,8 +18,8 @@ export default function Hero() {
                             </div>
                         </div>
                     </div>
-                    <div className=''>
-                        <Image src={heroImage} height={0} width={0} alt='Hero Image' sizes='100vw' style={{ width: '100%', height: 'auto' }} />
+                    <div className='items-center'>
+                        <Image src={heroImage} height={0} width={0} alt='Hero Image' sizes='100vw' style={{ width: '75%', height: 'auto' }} />
                     </div>
                 </div>
 

@@ -5,8 +5,8 @@ import applepay from '../../public/Apple_Pay_logo.svg'
 import Image from 'next/image'
 export default function Companies() {
     return (
-        <div className='bg-orange-400'>
-            <div className="mx-auto max-w-screen-lg grid sm:flex items-center justify-around text-gray-700 gap-2">
+        <div className='px-2'>
+            <div className="mx-auto max-w-screen-lg flex flex-wrap sm:flex items-center justify-around text-gray-700 gap-2">
                 <div className="">
                     <Image src={paystack} width={120} height={120} alt='' />
                 </div>

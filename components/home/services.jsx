@@ -25,7 +25,7 @@ const services = [
 ]
 export default function OurServices() {
     return (
-        <div className="">
+        <div className="px-2">
             <div className="mx-auto max-w-screen-lg items-center flex flex-col">
                 <div className="text-center text-gray-950 py-12 max-w-md">
                     <h2 className="text-2xl font-bold">Our Special <span className="text-orange-400">Services</span> for you</h2>
@@ -33,12 +33,13 @@ export default function OurServices() {
                         tour operator New York City China wellness Asia
                     </p>
                 </div>
-                <div className="flex flex-row ">
+                <div className="flex flex-row gap-4">
                     {
-                        services.map((item) => <a key={item.name} href={item.url} className="flex flex-col mx-auto text-gray-950" >
+                        services.map((item) => <div key={item.name} className="flex flex-col mx-auto text-gray-950" >
                             <Image src={item.img} height={0} width={0} alt={item.name} sizes='20vw' style={{ width: '35%', height: 'auto' }} className="mx-auto" />
-                            <p className="text-center py-2">{item.desc}</p>
-                        </a>
+                            <p className="text-center py-auto">{item.desc}</p>
+                            <a href={item.url} className="text-center underline"> Learn More</a>
+                        </div>
                         )
                     }
                 </div>

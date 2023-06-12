@@ -3,6 +3,7 @@ import house from '../../public/house.svg'
 import office from '../../public/office.svg'
 import shield from '../../public/shield.svg'
 
+
 const services = [
     {
         'name': 'Home',
@@ -28,17 +29,17 @@ export default function OurServices() {
         <div className="px-2">
             <div className="mx-auto max-w-screen-lg items-center flex flex-col">
                 <div className="text-center text-gray-950 py-12 max-w-md">
-                    <h2 className="text-2xl font-bold">Our Special <span className="text-orange-400">Services</span> for you</h2>
+                    <h2 className="text-2xl font-bold">Our Special <span className="text-emerald-600">Services</span> for you</h2>
                     <p className="text-center">Package euro flying. Package diary city trip booking budget frequent flyer outdoor
                         tour operator New York City China wellness Asia
                     </p>
                 </div>
-                <div className="flex flex-row gap-4">
+                <div className="flex md:flex-row lg:flex-row gap-4">
                     {
-                        services.map((item) => <div key={item.name} className="flex flex-col mx-auto text-gray-950" >
+                        services.map((item) => <div key={item.name} className="flex flex-row xs:flex-col mx-auto text-gray-950" >
                             <Image src={item.img} height={0} width={0} alt={item.name} sizes='20vw' style={{ width: '35%', height: 'auto' }} className="mx-auto" />
-                            <p className="text-center py-auto">{item.desc}</p>
-                            <a href={item.url} className="text-center underline"> Learn More</a>
+                            <p className="text-center py-4">{item.desc}</p>
+                            <a href={item.url} className="text-center underline py-2"> Learn More</a>
                         </div>
                         )
                     }

@@ -35,7 +35,7 @@ export default function Navbar() {
 	const [dropMenu, setDropMenu] = useState(false)
 
 	return (<div className='bg-white'>
-		<header className='absolute inset-x-0 top-0 z-50'>
+		<header className='relative inset-x-0 top-0 z-50'>
 			<nav className='flex items-center justify-between p-6 lg:px-8'>
 				<div className='flex lg:flex-1'>
 					<a href="/" className='-m-1.5 p-1.5 text-lg font-extrabold'>
@@ -51,18 +51,20 @@ export default function Navbar() {
 						<Bars3Icon className="h-6 w-6" aria-hidden="true" />
 					</button>
 				</div>
-				<div className="hidden lg:flex lg:gap-x-12">
+				<div className="hidden lg:flex lg:gap-x-12 ">
 					{
 						navigation.map((item) =>
-							item.submenu ? <div className="flex items-center" key={item.name}>
-								<button onMouseEnter={() => setDropMenu(true)} onMouseLeave={() => setDropMenu(false)} className="text-gray flex items-center text-sm font-semibold leading-6" type="button">{item.name} <svg className="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg></button>
-								{dropMenu && item.submenu?.map((menu) => <div key={menu.name} className="z-10 flex flex-col bg-white divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-									<select className="py-2 text-sm text-gray-700 dark:text-gray-200 ">
-										<option>
-											<a href={menu.href} className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">{menu.name}</a>
-										</option>
-									</select>
-								</div>)}
+							item.submenu ? <div onMouseEnter={() => setTimeout(() => setDropMenu(true), 500)} onMouseLeave={() => setTimeout(() => setDropMenu(false), 500)} className="items-center" key={item.name}>
+								<button className="text-gray flex items-center text-sm font-semibold leading-6" type="button">{item.name} <svg className="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg></button>
+								<div className={dropMenu ? 'flex '+`z-20 flex-col bg-white divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 `: 'hidden'}>
+									<ul className="py-2 text-sm text-gray-700 dark:text-gray-200 ">
+										{dropMenu && item.submenu?.map((menu) =>
+											<li key={menu.name}>
+												<a href={menu.href} className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">{menu.name}</a>
+											</li>
+										)}
+									</ul>
+								</div>
 							</div> : <a key={item.name} href={item.href} className="text-sm font-semibold leadin-6 text-gray-900">
 								{item.name}
 							</a>

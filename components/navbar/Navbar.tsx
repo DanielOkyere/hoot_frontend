@@ -109,8 +109,8 @@ export default function Navbar() {
 								}
 							</div>
 							<div className="flex py-6 flex-col gap-4" >
-								<a href="*" className="-mx-3 block   rounded-lg px-3 py-2 5 text-gray font-semibold leading-7  ">Sign In</a>
-								<a href="*" className="-mx-3 block  bg-emerald-900 rounded-lg px-3 py-2 5 text-white font-semibold leading-7  hover:bg-emerald-600">Create Account</a>
+								<a href="/login" className="-mx-3 block   rounded-lg px-3 py-2 5 text-gray-800 font-semibold leading-7">Sign In</a>
+								<a href="/login" className="-mx-3 block  bg-emerald-900 rounded-lg px-3 py-2 5 text-white font-semibold leading-7  hover:bg-emerald-600">Create Account</a>
 							</div>
 						</div>
 

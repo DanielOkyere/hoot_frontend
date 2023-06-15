@@ -75,10 +75,10 @@ export default function Navbar() {
 
 				<div className="hidden lg:flex lg:flex-1 lg:justify-end gap-4">
 					<a href="/login" className="rounded-lg px-3 py-3  text-sm font-semibold leading-6 text-gray-600">
-						Create Account
-					</a>
-					<a href="/login" className="rounded-lg px-3 py-3 bg-emerald-900 text-sm font-semibold leading-6 text-white">
 						Sign In
+					</a>
+					<a href="/login" className="rounded-lg px-3 py-3  text-sm font-semibold leading-6 bg-emerald-900 text-white">
+						Create Account
 					</a>
 				</div>
 
@@ -109,8 +109,8 @@ export default function Navbar() {
 								}
 							</div>
 							<div className="flex py-6 flex-col gap-4" >
+								<a href="*" className="-mx-3 block   rounded-lg px-3 py-2 5 text-gray font-semibold leading-7  ">Sign In</a>
 								<a href="*" className="-mx-3 block  bg-emerald-900 rounded-lg px-3 py-2 5 text-white font-semibold leading-7  hover:bg-emerald-600">Create Account</a>
-								<a href="*" className="-mx-3 block  bg-emerald-900 rounded-lg px-3 py-2 5 text-white font-semibold leading-7  hover:bg-emerald-600">Sign Up</a>
 							</div>
 						</div>
 

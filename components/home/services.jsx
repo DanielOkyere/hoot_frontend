@@ -26,7 +26,7 @@ const services = [
 ]
 export default function OurServices() {
     return (
-        <div className="px-2">
+        <div className="px-2 mt-12">
             <div className="mx-auto max-w-screen-lg items-center flex flex-col">
                 <div className="text-center text-gray-950 py-12 max-w-md">
                     <h2 className="text-2xl font-bold">Our Special <span className="text-emerald-600">Services</span> for you</h2>

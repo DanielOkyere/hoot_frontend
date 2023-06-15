@@ -1,15 +1,15 @@
 import Image from 'next/image'
-import heroImage from '../../public/hero_crop.png'
+import heroImage from '../../public/hero.png'
 export default function Hero() {
     return (
             <div className="relative isolate px-6 pt-1 lg:px-8  bg-white">
                 <div className="mx-auto max-w-screen-lg lg:py-32 xs:py-20 md:py-32 text-left flex md:flex-row flex-col gap-8 items-center">
                     <div className="flex flex-row gap-4 ">
-                        <div className='mx-auto  xs:w-.5 max-w-md'>
+                        <div className='mx-auto p-6  xs:w-.5 max-w-lg'>
                             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-3xl">
                                We safegaurd your digital nest
                             </h1>
-                            <p className="mt-6 text-lg leading-10 text-gray-600 text-justify ">
+                            <p className="mt-6 text-lg leading-10 text-gray-600 ">
                                 We safegaurd electronic transfers to support Fintech, banks, and all
                                 electronic payment platforms.
                             </p>
@@ -18,7 +18,7 @@ export default function Hero() {
                             </div>
                         </div>
                     </div>
-                    <div className='flex items-right max-w-50'>
+                    <div className='flex items-right max-w-sm mx-auto'>
                         <Image src={heroImage} height={0} width={0} alt='Hero Image' sizes='100vw' style={{ width: '100%', height: 'auto' }} />
                     </div>
                 </div>

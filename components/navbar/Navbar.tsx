@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
-import HootLogo from '../../public/Hoot Icon.jpeg'
+import HootLogo from '../../public/hootlogo.jpeg'
 
 const navigation = [
 	{
@@ -19,13 +19,13 @@ const navigation = [
 	{
 		name: 'Developers', href: '#', 'submenu': [
 			{
-				name: 'Hoot', href: '#'
+				name: 'Docs', href: '#'
 			},
 			{
-				name: 'Features_01', href: '#'
+				name: 'Libraries and SDK', href: '#'
 			},
 			{
-				name: 'Pricing_01', href: '#'
+				name: 'Samples', href: '#'
 			},
 		]
 	}
@@ -74,7 +74,7 @@ export default function Navbar() {
 
 
 				<div className="hidden lg:flex lg:flex-1 lg:justify-end gap-4">
-					<a href="/login" className="rounded-lg px-3 py-3 bg-emerald-900 text-sm font-semibold leading-6 text-white">
+					<a href="/login" className="rounded-lg px-3 py-3  text-sm font-semibold leading-6 text-gray-600">
 						Create Account
 					</a>
 					<a href="/login" className="rounded-lg px-3 py-3 bg-emerald-900 text-sm font-semibold leading-6 text-white">

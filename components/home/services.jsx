@@ -30,9 +30,6 @@ export default function OurServices() {
             <div className="mx-auto max-w-screen-lg items-center flex flex-col">
                 <div className="text-center text-gray-950 py-12 max-w-md">
                     <h2 className="text-2xl font-bold">Our Special <span className="text-emerald-600">Services</span> for you</h2>
-                    <p className="text-center">Package euro flying. Package diary city trip booking budget frequent flyer outdoor
-                        tour operator New York City China wellness Asia
-                    </p>
                 </div>
                 <div className="flex md:flex-row lg:flex-row gap-4">
                     {

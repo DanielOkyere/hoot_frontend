@@ -29,7 +29,7 @@ const companiesList = [
 ]
 export default function Companies() {
     return (
-        <div className='px-2 flex flex-col items-center'>
+        <div className='px-2 flex flex-col items-center h-full'>
                 <h2 className='text-center text-4xl font-semibold leading-8'>Our Clients</h2>
             <div className="mx-auto max-w-screen-lg flex flex-wrap sm:flex items-center justify-around text-gray-700 gap-8">
                 {

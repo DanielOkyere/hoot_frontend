@@ -34,7 +34,7 @@ export default function Section2() {
                     <ul className='list-inside'>
                         {details.map((items) => 
                          <li key={items.order}>
-                         <h3 className='text-2xl font-bold py-2'>{items.title}</h3>
+                         <h3 className='text-2xl font-bold py-2 text-gray-900'>{items.title}</h3>
                          <p className='text-gray-500'>
                             {items.content}
                         </p>

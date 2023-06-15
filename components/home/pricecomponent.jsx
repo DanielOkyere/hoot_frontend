@@ -118,7 +118,9 @@ export default function Pricecomponent() {
                                     </h1>
                                     <h2 className="text-sm text-white text-center pb-6"><span className="text-3xl">1% </span> transactional charge </h2>
 
-                                   Best for companies with online transactions lesser than 50,000 per month
+                                    <p className="ml-2 p-2">
+                                        Best for companies with online transactions lesser than 50,000 per month
+                                    </p>
                                 </div>
                                 <div className="flex pl-12 justify-start sm:justify-start mt-3">
                                     <ul>
@@ -166,7 +168,7 @@ export default function Pricecomponent() {
                                             >24 / 7 Support</span
                                             >
                                         </li>
-                                       
+
                                     </ul>
                                 </div>
 
@@ -194,12 +196,14 @@ export default function Pricecomponent() {
                                         >
                                             Enteprise Scale Business
                                         </h1>
-
-                                       Best for companies with over 50,000 transactions per month
+                                        &nbsp;
+                                        <p className="ml-2 p-2">
+                                            Best for companies with over 50,000 transactions per month
+                                        </p>
                                     </div>
-                                    <div className="flex flex-wrap mt-3 px-6">
+                                    <div className="flex flex-wrap mt-3 px-6 ml-4">
                                         <ul>
-                                           
+
                                             <li className="flex items-center">
                                                 <div
                                                     className=" rounded-full p-2 fill-current text-green-700"

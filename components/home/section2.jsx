@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import couch2 from '../../public/couch2.png'
+import couch2 from '../../public/hero.png'
 
 const details = [
     {
@@ -26,7 +26,7 @@ export default function Section2() {
         <div className='px-4'>
             <div className="flex md:flex-row flex-col items-center mx-auto max-w-screen-lg mt-12 py-8">
                 <div className="image pl-2">
-                    <Image src={couch2} height={0} width={0} alt='Couch Image' sizes='100vw' style={{ width: '100%', height: 'auto' }} />
+                    <Image src={couch2} height={0} width={0} alt='Couch Image' sizes='60vw' style={{ width: '100%', height: 'auto' }} />
                 </div>
                 <div className='items-center text-left max-w-md'>
                     <h2 className='text-xl font-bold tracking-tight text-gray-900 sm:text-3xl'> <span className='text-emerald-600'>Find</span> top notch security services like:</h2>

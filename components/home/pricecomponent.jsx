@@ -28,8 +28,8 @@ export default function Pricecomponent() {
                                         >
                                             Small Scale Business
                                         </h1>
-                                        <h2 className="text-sm text-gray-500 text-center pb-6">FREE</h2>
-
+                                       
+                                        &nbsp;
                                         <p>Best for Companies with online transactions lesser than 10,000 per month </p>
                                     </div>
 

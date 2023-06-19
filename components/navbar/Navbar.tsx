@@ -37,11 +37,14 @@ const navigation = [
             },
         ],
     },
+    { name: "Contact Us", href: "/reachus" },
+
 ];
 
 export default function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [dropMenu, setDropMenu] = useState(false);
+    const [dropLogin, setLoginDrop] = useState(false);
 
     return (
         <div className="bg-white">
@@ -146,12 +149,75 @@ export default function Navbar() {
                         )}
                     </div>
 
-                    <div className="hidden lg:flex lg:flex-1 lg:justify-end gap-4">
+                    <div className="hidden lg:flex lg:flex-1 lg:justify-end gap-4 relative">
                         <a
                             href="/login"
                             className="rounded-lg px-3 py-3  text-sm font-semibold leading-6 text-gray-600"
+                            onMouseOver={() =>
+                                setTimeout(() => setLoginDrop(true), 500)
+                            }
+                            onMouseOut={() =>
+                                setTimeout(() => setLoginDrop(false), 3000)
+                            }
                         >
                             Sign In
+                            {dropLogin && (
+                                <div
+                                    className={
+                                        dropLogin
+                                            ? " flex flex-col absolute bg-white divide-gray-300 rounded-lg shadow w-1/3 py-4 dark:bg-gray-700 mt-8"
+                                            : "hidden"
+                                    }
+                                >
+                                    <a
+                                        href="/login"
+                                        className="px-4 py-2  hover:bg-emerald-900 hover:text-white flex flex-row items-center"
+                                        onMouseOver={() =>
+                                            setTimeout(
+                                                () => setLoginDrop(true),
+                                                500,
+                                            )
+                                        }
+                                    >
+                                        <svg
+                                            className="px-2 hover:fill-white"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="40"
+                                            height="40"
+                                            viewBox="0 0 256 256"
+                                        >
+                                            <path
+                                                fill="#065f46"
+                                                d="M234.38 210a123.36 123.36 0 0 0-60.78-53.23a76 76 0 1 0-91.2 0A123.36 123.36 0 0 0 21.62 210a12 12 0 1 0 20.77 12c18.12-31.32 50.12-50 85.61-50s67.49 18.69 85.61 50a12 12 0 0 0 20.77-12ZM76 96a52 52 0 1 1 52 52a52.06 52.06 0 0 1-52-52Z"
+                                            />
+                                        </svg>
+                                        Individual
+                                    </a>
+                                    <a
+                                        href="/login"
+                                        className="px-4 py-2 flex flex-row items-center hover:bg-emerald-900 hover:text-white"
+                                        onMouseOver={() =>
+                                            setTimeout(
+                                                () => setLoginDrop(true),
+                                                500,
+                                            )
+                                        }
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="40"
+                                            height="40"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path
+                                                fill="#065f46"
+                                                d="M18 15h-2v2h2m0-6h-2v2h2m2 6h-8v-2h2v-2h-2v-2h2v-2h-2V9h8M10 7H8V5h2m0 6H8V9h2m0 6H8v-2h2m0 6H8v-2h2M6 7H4V5h2m0 6H4V9h2m0 6H4v-2h2m0 6H4v-2h2m6-10V3H2v18h20V7H12Z"
+                                            />
+                                        </svg>{" "}
+                                        Company
+                                    </a>
+                                </div>
+                            )}
                         </a>
                         <a
                             href="/login"

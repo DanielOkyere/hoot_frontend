@@ -18,6 +18,11 @@ const footerlist = [
         'name': 'Developers',
         'url':'#',
         'desc':'Developers'
+    },
+    {
+        'name': 'Contact Us',
+        'url':'/reachus',
+        'desc':'Contact Us'
     }
 ]
 
@@ -37,7 +42,7 @@ export default function FooterComponent() {
                 }
                 </nav>
                 <p class="mt-8 text-center text-base text-gray-400">
-                    &copy; 2023 HOOT, Inc. All rights reserved.
+                    &copy; 2023 Hoot Secure Limited.  All rights reserved.
                 </p>
             </div>
         </footer>

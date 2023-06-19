@@ -26,7 +26,7 @@ export default function Pricecomponent() {
                                         <h1
                                             className="text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide"
                                         >
-                                            Small Scale Business
+                                           Individual Business
                                         </h1>
                                        
                                         &nbsp;

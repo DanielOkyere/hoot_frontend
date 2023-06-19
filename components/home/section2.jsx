@@ -16,7 +16,7 @@ const details = [
     },
     {
         'title': 'Premium Cybersecurity Services',
-        'content': `Our customers Enjoy Premium Cybersecurity services.`,
+        'content': `Our customers enjoy top notch bespoke security services to fit your individual needs`,
         'order': 3
     },
 ]

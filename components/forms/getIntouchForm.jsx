@@ -1,6 +1,7 @@
 const listOfOptions=[
-    {'name': 'Enquiry'},
-    {'name':'Integration'}
+    {'name': 'Integration'},
+    {'name':'Customer Service'},
+    {'name':'Financial Security Consulting'}
 ]
 
 

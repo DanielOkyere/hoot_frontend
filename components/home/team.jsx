@@ -2,13 +2,13 @@ import Image from 'next/image'
 import Kane from '../../public/kane.jpeg'
 const Team = [
     {
-        name: "Kwabena Okyere",
-        role: "CEO",
+        name: "Kane Mani",
+        role: "Co-founder",
         imageUrl: Kane,
     },
     {
-        name: "Kane Mani",
-        role: "Co-fonder",
+        name: "Kwabena Okyere",
+        role: "CEO",
         imageUrl: Kane,
     },
 ];

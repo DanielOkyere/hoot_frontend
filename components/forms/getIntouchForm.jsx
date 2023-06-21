@@ -1,3 +1,9 @@
+const listOfOptions=[
+    {'name': 'Enquiry'},
+    {'name':'Integration'}
+]
+
+
 export default function Getintouch() {
     return (<div className="bg-white dark:bg-slate-800" id="contact">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
@@ -89,6 +95,13 @@ export default function Getintouch() {
                                     </div>
                                     <div className="mx-0 mb-1 sm:mb-4">
                                         <label for="email" className="pb-1 text-xs uppercase tracking-wider"></label><input type="email" id="email" autocomplete="email" placeholder="Your email address" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" name="email"/>
+                                    </div>
+                                    <div className="mx-0 mb-1 sm:mb-4">
+                                        <select className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0">
+                                            {listOfOptions.map((item, index) => {
+                                                return <option key={index}>{item.name}</option>
+                                            })}
+                                        </select>
                                     </div>
                                 </div>
                                 <div className="mx-0 mb-1 sm:mb-4">

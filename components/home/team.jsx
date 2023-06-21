@@ -21,8 +21,8 @@ export default function TeamComponent() {
                         Message from Co-founders
                     </h2>
                     <p className="mt-6 text-lg leading-8 text-gray-600">
-                        Libero fames augue nisl porttitor nisi, quis. Id ac elit
-                        odio vitae elementum enim vitae ullamcorper suspendisse.
+                        Welcome to Hoot Secure. We are excited to provide you with safe and secure money transfers and payment with current anti fraud protection strategies. 
+                        Our real time safety features ensure your transactions are safe and your transfers arrive to your desired destination.
                     </p>
 
                 </div>
@@ -33,7 +33,7 @@ export default function TeamComponent() {
                     {Team.map((person) => (
                         <li key={person.name}>
                             <div className="flex flex-col items-center gap-x-6">
-                            <Image src={person.imageUrl} height={40} width={40} alt='Hero Image' sizes='40vw' style={{ width: '100%', height: '50%' }} className='rounded-full' />
+                            <Image src={person.imageUrl} alt='Hero Image' className='rounded-full h-70 w-70 shadow-2xl' />
                                 <div className="mt-2 py-2">
                                     <h3 className="text-base font-semibold leading-7 tracking-tight text-emerald-900">
                                         {person.name}

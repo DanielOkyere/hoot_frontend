@@ -1,8 +1,15 @@
+import Image from 'next/image'
+import Kane from '../../public/kane.jpeg'
 const Team = [
     {
-        name: "Test",
-        role: "chief officer",
-        imageUrl: "https://picsum.photos/200/300",
+        name: "Kwabena Okyere",
+        role: "CEO",
+        imageUrl: Kane,
+    },
+    {
+        name: "Kane Mani",
+        role: "Co-fonder",
+        imageUrl: Kane,
     },
 ];
 export default function TeamComponent() {
@@ -11,7 +18,7 @@ export default function TeamComponent() {
             <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
                 <div className="max-w-2xl">
                     <h2 className="text-3xl font-bold tracking-tight text-emerald-900 sm:text-4xl">
-                        Message from founder
+                        Message from Co-founders
                     </h2>
                     <p className="mt-6 text-lg leading-8 text-gray-600">
                         Libero fames augue nisl porttitor nisi, quis. Id ac elit
@@ -26,11 +33,7 @@ export default function TeamComponent() {
                     {Team.map((person) => (
                         <li key={person.name}>
                             <div className="flex flex-col items-center gap-x-6">
-                                <img
-                                    className="h-40 w-40 rounded-lg"
-                                    src={person.imageUrl}
-                                    alt={person.name}
-                                />
+                            <Image src={person.imageUrl} height={40} width={40} alt='Hero Image' sizes='40vw' style={{ width: '100%', height: '50%' }} className='rounded-full' />
                                 <div className="mt-2 py-2">
                                     <h3 className="text-base font-semibold leading-7 tracking-tight text-emerald-900">
                                         {person.name}

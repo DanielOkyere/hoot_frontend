@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import Kane from '../../public/kane.jpeg'
+import Kane from '../../public/kane.png'
+import kwabena from '../../public/kwabena.png'
 const Team = [
     {
         name: "Kane Mani",
@@ -8,8 +9,8 @@ const Team = [
     },
     {
         name: "Kwabena Okyere",
-        role: "CEO",
-        imageUrl: Kane,
+        role: "Co-founder",
+        imageUrl: kwabena,
     },
 ];
 export default function TeamComponent() {
@@ -33,7 +34,7 @@ export default function TeamComponent() {
                     {Team.map((person) => (
                         <li key={person.name}>
                             <div className="flex flex-col items-center gap-x-6">
-                            <Image src={person.imageUrl} alt='Hero Image' className='rounded-full h-70 w-70 shadow-2xl' />
+                            <Image src={person.imageUrl} alt={person.name} className='rounded-full h-80 w-80 shadow-2xl' />
                                 <div className="mt-2 py-2">
                                     <h3 className="text-base font-semibold leading-7 tracking-tight text-emerald-900">
                                         {person.name}

@@ -18,7 +18,7 @@ export default function Getintouch() {
                         className="font-heading mb-4 font-bold tracking-tight text-emerald-900 dark:text-white text-3xl sm:text-5xl">
                         Get in Touch
                     </h2>
-                    <p className="mx-auto mt-4 max-w-3xl text-xl text-gray-600 dark:text-slate-400">  We're here to help! 
+                    <p className="mx-auto mt-4 max-w-3xl text-xl text-gray-600 dark:text-slate-400">  We're here to help. 
                     </p>
                 </div>
             </div>

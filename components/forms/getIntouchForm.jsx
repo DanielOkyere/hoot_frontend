@@ -26,7 +26,7 @@ export default function Getintouch() {
                 <div className="grid md:grid-cols-2">
                     <div className="h-full pr-6">
                         <p className="mt-3 mb-12 text-lg text-gray-600 dark:text-slate-400">
-                        If you have any questions, feedback, or inquiries, please don't hesitate to reach out to us. 
+                        If you have any questions, feedback, or inquiries, please do not hesitate to reach out to us. 
                         Our dedicated customer support team is ready to assist you with any issues or concerns you may have. 
                         You can contact us through the following methods:
                         </p>

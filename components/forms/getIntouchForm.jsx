@@ -1,7 +1,8 @@
 const listOfOptions=[
     {'name': 'Integration'},
     {'name':'Customer Service'},
-    {'name':'Financial Security Consulting'}
+    {'name':'Financial Security Consulting'},
+    {'name':'Request Demo'}
 ]
 
 
@@ -17,8 +18,7 @@ export default function Getintouch() {
                         className="font-heading mb-4 font-bold tracking-tight text-emerald-900 dark:text-white text-3xl sm:text-5xl">
                         Get in Touch
                     </h2>
-                    <p className="mx-auto mt-4 max-w-3xl text-xl text-gray-600 dark:text-slate-400">In hac habitasse platea
-                        dictumst
+                    <p className="mx-auto mt-4 max-w-3xl text-xl text-gray-600 dark:text-slate-400">  We're here to help! 
                     </p>
                 </div>
             </div>
@@ -26,9 +26,9 @@ export default function Getintouch() {
                 <div className="grid md:grid-cols-2">
                     <div className="h-full pr-6">
                         <p className="mt-3 mb-12 text-lg text-gray-600 dark:text-slate-400">
-                            Class aptent taciti sociosqu ad
-                            litora torquent per conubia nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut scelerisque
-                            sagittis ante, ac tincidunt sem venenatis ut.
+                        If you have any questions, feedback, or inquiries, please don't hesitate to reach out to us. 
+                        Our dedicated customer support team is ready to assist you with any issues or concerns you may have. 
+                        You can contact us through the following methods:
                         </p>
                         <ul className="mb-6 md:mb-0">
                             <li className="flex">
@@ -87,7 +87,7 @@ export default function Getintouch() {
                         </ul>
                     </div>
                     <div className="card h-fit max-w-6xl p-5 md:p-12" id="form">
-                        <h2 className="mb-4 text-2xl font-bold">Ready to Get Started?</h2>
+                        <h2 className="mb-4 text-2xl font-bold">We are just a click away!</h2>
                         <form id="contactForm">
                             <div className="mb-6">
                                 <div className="mx-0 mb-1 sm:mb-4">

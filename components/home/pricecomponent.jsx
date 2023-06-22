@@ -1,7 +1,7 @@
 export default function Pricecomponent() {
     return (
         <>
-            <div>
+            <div id="pricing-compent">
                 <div className="container max-w-full mx-auto py-24 px-6">
                     <p className="text-center text-lg text-gray-700 mt-2 px-6">
                         Our pricing are very competitive, however we have affordable cyber security solutions for every business

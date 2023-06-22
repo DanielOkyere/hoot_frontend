@@ -26,19 +26,19 @@ const services = [
         'name': 'Home',
         'img': <Shield />,
         'desc': 'Valuable protection 24/7',
-        'url': ''
+        'url': '/reachus'
     },
     {
         'name': 'Home',
         'img': <HomeSVG/>,
         'desc': 'Protection for your business transactions',
-        'url': ''
+        'url': '/reachus'
     },
     {
         'name': 'Home',
         'img': <Corporate />,
         'desc': 'Personalised protection and detection of fraudulent activities',
-        'url': ''
+        'url': '/reachus'
     }
 ]
 export default function OurServices() {

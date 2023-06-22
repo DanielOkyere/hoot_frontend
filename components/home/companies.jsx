@@ -30,9 +30,9 @@ const companiesList = [
 export default function Companies() {
     return (
         <div className='px-2 flex flex-col items-center mb-6 '>
-            <h2 className='text-center text-2xl font-bold leading-8 text-gray-900'>Our <span className='text-emerald-600'>Clients</span></h2>
+            <h2 className='text-center text-2xl font-bold leading-8 text-gray-900'>Our <span className='text-emerald-600'>Customers</span></h2>
             <div
-                className="h-1 mx-auto bg-emerald-800 w-32 opacity-75 mt-2 rounded"
+                className="h-1 mx-auto bg-emerald-800 w-36 opacity-75 mt-2 rounded"
             ></div>
             <div className="mx-auto w-full flex flex-wrap sm:flex items-center justify-around text-gray-700 gap-8 max-w-screen-xl">
                 {

@@ -9,7 +9,7 @@ const Team = [
     },
     {
         name: "Kwabena Okyere",
-        role: "Co-founder",
+        role: "Co-founder & CEO",
         imageUrl: kwabena,
     },
 ];
@@ -34,7 +34,7 @@ export default function TeamComponent() {
                     {Team.map((person) => (
                         <li key={person.name}>
                             <div className="flex flex-col items-center gap-x-6">
-                            <Image src={person.imageUrl} alt={person.name} className='rounded-full h-80 w-80 shadow-2xl' />
+                            <Image src={person.imageUrl} alt={person.name} className='rounded-full h-100 w-80 shadow-2xl' />
                                 <div className="mt-2 py-2">
                                     <h3 className="font-semibold leading-7 tracking-tight text-emerald-900 team-name text-2xl">
                                         {person.name}

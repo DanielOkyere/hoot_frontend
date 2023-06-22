@@ -26,3 +26,9 @@ body {
   background-size: cover;
 
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+.team-name{
+  font-family: 'Caveat',cursive;
+}

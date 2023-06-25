@@ -151,13 +151,13 @@ export default function Navbar() {
 
                     <div className="hidden lg:flex lg:flex-1 lg:justify-end gap-4 relative">
                         <a
-                            href="/login"
+                            href="https://hoot-dashboard.vercel.app/login"
                             className="rounded-lg px-3 py-3  text-sm font-semibold leading-6 text-white bg-emerald-900 hover:bg-emerald-600"
                         >
                             Sign In
                         </a>
                         <a
-                            href="/login"
+                            href="https://hoot-dashboard.vercel.app/register"
                             className="rounded-lg px-3 py-3  text-sm font-semibold leading-6 bg-emerald-900 text-white hover:bg-emerald-600"
                         >
                             Create Account
@@ -285,13 +285,13 @@ export default function Navbar() {
                                 </div>
                                 <div className="flex py-6 flex-col gap-4">
                                     <a
-                                        href="/login"
+                                        href="https://hoot-dashboard.vercel.app/login"
                                         className="-mx-3 block   rounded-lg px-3 py-2 5 text-gray-800 font-semibold leading-7"
                                     >
                                         Sign In
                                     </a>
                                     <a
-                                        href="/login"
+                                        href="https://hoot-dashboard.vercel.app/register"
                                         className="-mx-3 block  bg-emerald-900 rounded-lg px-3 py-2 5 text-white font-semibold leading-7  hover:bg-emerald-600"
                                     >
                                         Create Account

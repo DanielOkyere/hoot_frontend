@@ -32,3 +32,7 @@ body {
 .team-name{
   font-family: 'Caveat',cursive;
 }
+
+.team_image{
+  border-radius: 100%;
+}

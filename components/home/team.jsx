@@ -34,14 +34,15 @@ export default function TeamComponent() {
                     {Team.map((person) => (
                         <li key={person.name}>
                             <div className="flex flex-col items-center gap-x-6">
-                            <Image src={person.imageUrl} alt={person.name} className='rounded-full h-100 w-80 shadow-2xl' />
+                            <Image src={person.imageUrl} alt={person.name} className='rounded-full h-100 w-80 shadow-2xl team_image' />
                                 <div className="mt-2 py-2">
                                     <h3 className="font-semibold leading-7 tracking-tight text-emerald-900 team-name text-2xl">
                                         {person.name}
                                     </h3>
-                                    <p className="text-sm font-semibold leading-6 text-gray-900">
+                                    <p className="text-sm font-semibold leading-6 text-gray-900 mb-4">
                                         {person.role}
                                     </p>
+                                    <a href="/team" className='p-3 mt-4 rounded-lg bg-emerald-600 text-center text-white'>learn more</a>
                                 </div>
                             </div>
                         </li>

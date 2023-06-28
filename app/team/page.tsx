@@ -8,8 +8,8 @@ export default function TeamBio() {
     return (
         <div>
             <Navbar />
-            <div className="flex flex-col sm:flex-row mx-auto max-w-screen-2xl">
-                <div className="pt-16 w-1/2 bg-white">
+            <div className="flex flex-col sm:flex-row md:flex-row mx-auto max-w-screen-2xl items-center">
+                <div className="pt-16 lg:w-1/2 w-full bg-white">
                     <div className="w-full  px-4 mx-auto">
                         <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg mt-16">
                             <div className="px-6">
@@ -76,7 +76,7 @@ export default function TeamBio() {
                         </div>
                     </div>
                 </div>
-                <div className="pt-16 w-1/2 bg-white">
+                <div className="pt-16 lg:w-1/2 w-full bg-white">
                     <div className="w-full  px-4 mx-auto">
                         <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg mt-16">
                             <div className="px-6">
@@ -107,12 +107,12 @@ export default function TeamBio() {
                                 </div>
                                 <div className="mt-10 py-10 border-t border-emerald-200 text-center">
                                     <div className="flex flex-wrap justify-center">
-                                        <div className="w-full lg:w-9/12 px-4">
+                                        <div className="w-full lg:w-9/12 px-2">
                                             <p className="mb-4 text-lg leading-relaxed text-gray-700">
                                                 Kwabena Okyere is a serial
                                                 entrepreneur and VC with a focus
                                                 on disrupting industries and
-                                                partnering with like-minded
+                                                collaborating with like-minded
                                                 people. <br /> He attended J Mac
                                                 Robinson College of Business in
                                                 Atlanta, Georgia with a major in
